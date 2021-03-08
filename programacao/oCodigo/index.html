@@ -1,0 +1,972 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>Código - Robozito 2020</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Robozito 2020" class="md-header__button md-logo" aria-label="Robozito 2020">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Robozito 2020
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Código
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../corpo/projeto1/" class="md-tabs__link">
+        Corpo
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../braco/projeto2/" class="md-tabs__link">
+        Braços
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../eletronica/projeto3/" class="md-tabs__link">
+        Eletrônica
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../configArduinoIDE/" class="md-tabs__link md-tabs__link--active">
+        Programação
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../montagem/montagem/" class="md-tabs__link">
+        Montagem
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Robozito 2020" class="md-nav__button md-logo" aria-label="Robozito 2020">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Robozito 2020
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Corpo
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Corpo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Corpo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../corpo/projeto1/" class="md-nav__link">
+        Projetando o Corpo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../laser/" class="md-nav__link">
+        Corte à Laser
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Braços
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Braços" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Braços
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../braco/projeto2/" class="md-nav__link">
+        Projetando os Braços
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../braco/moterEsuporte/" class="md-nav__link">
+        Motores e Suporte
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../braco/3dPrint/" class="md-nav__link">
+        Impressão 3D
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Eletrônica
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Eletrônica" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Eletrônica
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eletronica/projeto3/" class="md-nav__link">
+        Projetando a placa eletrônica
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eletronica/usinagemPcb/" class="md-nav__link">
+        Usinagem de PCB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eletronica/solda/" class="md-nav__link">
+        Solda
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eletronica/montagemEletronica/" class="md-nav__link">
+        Montagem da Eletrônica
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Programação
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Programação" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Programação
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configArduinoIDE/" class="md-nav__link">
+        Configuração da Arduino IDE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Código
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gravandoESP/" class="md-nav__link">
+        Gravando o código na ESP8266
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Montagem
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Montagem" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Montagem
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../montagem/montagem/" class="md-nav__link">
+        Montagem
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Código</h1>
+                
+                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;ESP8266WiFi.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;WebSocketsServer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;ESP8266WebServer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;ESP8266mDNS.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;Hash.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;Servo.h&gt;</span><span class="c1">   // Include the library</span><span class="cp"></span>
+
+
+<span class="n">Servo</span> <span class="n">servo1</span><span class="p">;</span>        <span class="c1">// Create the Servo and name it &quot;servo1&quot;</span>
+<span class="n">Servo</span> <span class="n">servo2</span><span class="p">;</span>        <span class="c1">// Create the Servo and name it &quot;servo2&quot;</span>
+<span class="n">Servo</span> <span class="n">servo3</span><span class="p">;</span>        <span class="c1">// Create the Servo and name it &quot;servo3&quot;</span>
+<span class="n">Servo</span> <span class="n">servo4</span><span class="p">;</span>        <span class="c1">// Create the Servo and name it &quot;servo4&quot;</span>
+
+<span class="cp">#define SERVO1    D0</span>
+<span class="cp">#define SERVO2    D2</span>
+<span class="cp">#define SERVO3    D3</span>
+<span class="cp">#define SERVO4    D4</span>
+
+<span class="cp">#define USE_SERIAL Serial</span>
+
+<span class="n">ESP8266WebServer</span> <span class="nf">server</span><span class="p">(</span><span class="mi">80</span><span class="p">);</span>
+<span class="n">WebSocketsServer</span> <span class="n">webSocket</span> <span class="o">=</span> <span class="n">WebSocketsServer</span><span class="p">(</span><span class="mi">81</span><span class="p">);</span>
+
+<span class="n">String</span> <span class="n">website</span> <span class="o">=</span> <span class="s">&quot;&lt;html&gt;&lt;head&gt;&lt;script&gt;&quot;</span>
+        <span class="s">&quot;var connection = new WebSocket(&#39;ws://&#39; + location.hostname + &#39;:81/&#39;, [&#39;arduino&#39;]);&quot;</span>
+        <span class="s">&quot;connection.onopen = function(){ connection.send(&#39;Connected on &#39; + new Date()); };&quot;</span>
+        <span class="s">&quot;connection.onerror = function (error){ console.log(&#39;WebSocket Error &#39;, error); };&quot;</span>
+        <span class="s">&quot;connection.onmessage = function(e){console.log(&#39;Server: &#39;, e.data); };&quot;</span>      
+        <span class="s">&quot;function sendValue(){&quot;</span>
+        <span class="s">&quot;var value = parseInt(document.getElementById(&#39;r&#39;).value).toString(16);&quot;</span>
+        <span class="s">&quot;if (value.length &lt; 2){value = &#39;0&#39; + value;}&quot;</span>
+            <span class="s">&quot;color = document.getElementById(&#39;color&#39;).value;&quot;</span>
+            <span class="s">&quot;var command = &#39;$&#39; + color + value;&quot;</span>
+            <span class="s">&quot;console.log(&#39;Command: &#39; + command);&quot;</span>
+            <span class="s">&quot;connection.send(command);}&lt;/script&gt;&lt;/head&gt;&quot;</span>
+        <span class="s">&quot;&lt;body&gt;LED Control:&lt;br/&gt;&lt;select id=</span><span class="se">\&quot;</span><span class="s">color</span><span class="se">\&quot;</span><span class="s">&gt;&quot;</span>
+        <span class="s">&quot;&lt;option value=</span><span class="se">\&quot;</span><span class="s">R</span><span class="se">\&quot;</span><span class="s">&gt;Red&lt;/option&gt;&lt;option value=</span><span class="se">\&quot;</span><span class="s">G</span><span class="se">\&quot;</span><span class="s">&gt;Green&lt;/option&gt;&lt;option value=</span><span class="se">\&quot;</span><span class="s">B</span><span class="se">\&quot;</span><span class="s">&gt;Blue&lt;/option&gt;&lt;option value=</span><span class="se">\&quot;</span><span class="s">W</span><span class="se">\&quot;</span><span class="s">&gt;White&lt;/option&gt;&quot;</span>
+        <span class="s">&quot;&lt;/select&gt;&lt;br/&gt;&lt;br/&gt;Intensity: &lt;br/&gt; &lt;input id=</span><span class="se">\&quot;</span><span class="s">r</span><span class="se">\&quot;</span><span class="s"> type=</span><span class="se">\&quot;</span><span class="s">range</span><span class="se">\&quot;</span><span class="s"> min=</span><span class="se">\&quot;</span><span class="s">0</span><span class="se">\&quot;</span><span class="s"> max=</span><span class="se">\&quot;</span><span class="s">255</span><span class="se">\&quot;</span><span class="s"> step=</span><span class="se">\&quot;</span><span class="s">1</span><span class="se">\&quot;</span><span class="s"> oninput=</span><span class="se">\&quot;</span><span class="s">sendValue();</span><span class="se">\&quot;</span><span class="s">/&gt;&lt;br/&gt;&lt;/body&gt;&lt;/html&gt;&quot;</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">webSocketEvent</span><span class="p">(</span><span class="kt">uint8_t</span> <span class="n">num</span><span class="p">,</span> <span class="n">WStype_t</span> <span class="n">type</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="o">*</span> <span class="n">payload</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">length</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="k">switch</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="nl">WStype_DISCONNECTED</span><span class="p">:</span>
+      <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;[%u] Disconnected!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="nl">WStype_CONNECTED</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">IPAddress</span> <span class="n">ip</span> <span class="o">=</span> <span class="n">webSocket</span><span class="p">.</span><span class="n">remoteIP</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+        <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;[%u] Connected from %d.%d.%d.%d url: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">ip</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ip</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ip</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">ip</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">payload</span><span class="p">);</span>
+
+        <span class="c1">// send message to client</span>
+        <span class="n">webSocket</span><span class="p">.</span><span class="n">sendTXT</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s">&quot;Connected&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="nl">WStype_TEXT</span><span class="p">:</span>
+      <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;[%u] got Text: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">payload</span><span class="p">);</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="n">payload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;$&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// decode rgb data</span>
+        <span class="kt">uint8_t</span> <span class="n">value</span> <span class="o">=</span> <span class="p">(</span><span class="kt">uint8_t</span><span class="p">)</span> <span class="n">strtol</span><span class="p">((</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">payload</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+
+        <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">payload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;R&#39;</span><span class="p">){</span>
+          <span class="n">servo1</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">payload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;G&#39;</span><span class="p">){</span>
+          <span class="n">servo2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">payload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;B&#39;</span><span class="p">){</span>
+          <span class="n">servo3</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">payload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;W&#39;</span><span class="p">){</span>
+          <span class="n">servo4</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+
+  <span class="c1">//USE_SERIAL.setDebugOutput(true);</span>
+
+  <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+  <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+  <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kt">uint8_t</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="n">t</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;[SETUP] BOOT WAIT %d...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">t</span><span class="p">);</span>
+    <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">flush</span><span class="p">();</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="n">servo1</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">SERVO1</span><span class="p">);</span>
+  <span class="n">servo2</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">SERVO2</span><span class="p">);</span>
+  <span class="n">servo3</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">SERVO3</span><span class="p">);</span>
+  <span class="n">servo4</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">SERVO4</span><span class="p">);</span>
+
+  <span class="n">servo1</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span> 
+  <span class="n">servo2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span> 
+  <span class="n">servo3</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span> 
+  <span class="n">servo4</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span> 
+
+<span class="hll">  <span class="n">WiFi</span><span class="p">.</span><span class="n">softAP</span><span class="p">(</span><span class="s">&quot;padra1za1&quot;</span><span class="p">);</span>
+</span>
+  <span class="n">IPAddress</span> <span class="n">myIP</span> <span class="o">=</span> <span class="n">WiFi</span><span class="p">.</span><span class="n">softAPIP</span><span class="p">();</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;AP IP address: &quot;</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">myIP</span><span class="p">);</span>
+
+  <span class="c1">// start webSocket server</span>
+  <span class="n">webSocket</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+  <span class="n">webSocket</span><span class="p">.</span><span class="n">onEvent</span><span class="p">(</span><span class="n">webSocketEvent</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">MDNS</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="s">&quot;esp8266&quot;</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">USE_SERIAL</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;MDNS responder started&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// handle index</span>
+  <span class="n">server</span><span class="p">.</span><span class="n">on</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">,</span> <span class="p">[]()</span> <span class="p">{</span>
+    <span class="c1">// send index.html</span>
+    <span class="n">server</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="s">&quot;text/html&quot;</span><span class="p">,</span> <span class="n">website</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="n">server</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+
+  <span class="c1">// Add service to MDNS</span>
+  <span class="n">MDNS</span><span class="p">.</span><span class="n">addService</span><span class="p">(</span><span class="s">&quot;http&quot;</span><span class="p">,</span> <span class="s">&quot;tcp&quot;</span><span class="p">,</span> <span class="mi">80</span><span class="p">);</span>
+  <span class="n">MDNS</span><span class="p">.</span><span class="n">addService</span><span class="p">(</span><span class="s">&quot;ws&quot;</span><span class="p">,</span> <span class="s">&quot;tcp&quot;</span><span class="p">,</span> <span class="mi">81</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">webSocket</span><span class="p">.</span><span class="n">loop</span><span class="p">();</span>
+  <span class="n">server</span><span class="p">.</span><span class="n">handleClient</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../configArduinoIDE/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Configuração da Arduino IDE
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../gravandoESP/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Gravando o código na ESP8266
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; Luis Bueno @ Insper
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>
