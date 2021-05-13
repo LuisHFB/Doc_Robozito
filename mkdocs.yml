@@ -6,6 +6,7 @@ copyright: 'Copyright &copy; Luis Bueno @ Insper'
 
 theme: 
   name: material
+  language: pt
   features:
     - 'navigation.tabs'
     - 'navigation.sections' 
@@ -36,9 +37,6 @@ theme:
   font:
     text: 'Roboto' 
     code: 'Roboto Mono'
-
-# docs_dir: docs-src
-# site_dir: docs
   
 # Navegação
 nav:
@@ -109,3 +107,12 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: 'https://github.com/LuisHFB/Doc_Robozito'
+  alternate:
+    # Switch to English
+    - name: English
+      link: 'https://luishfb.github.io/Doc_RobozitoEN/'
+      lang: en
+    # Switch to Portuguese
+    - name: Português
+      link: 'https://luishfb.github.io/Doc_Robozito/'
+      lang: pt
