@@ -1,5 +1,5 @@
-![Montagem das rodas](imgs/Rodas.png){: .center}
+![Pezinho](imgs/pezinho.png){: .center}
 
-![Peças Explodidas](imgs/Pe.png){: .center}
+![Roda](imgs/Roda.png){: .center}
 
-![Peças Impressas](imgs/PeImpresso.png){: .center}
+![Lateral](imgs/Lateral.png){: .center}
