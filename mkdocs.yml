@@ -60,7 +60,7 @@ nav:
     - 'Projetando os Braços': 'braco/projeto2.md'
     - 'Rodas e Apoio': 'braco/rodaApoio.md'
     - 'Impressão 3D': 'braco/3dPrint.md'
-    #- 'Arquivos de impressão 3d' : 'link2'
+    - 'Arquivos de impressão 3d' : 'braco/files/STLPeçasImpressas.zip'
   - Montagem: 
     - 'BOM': 'montagem/montagem.md'
 
