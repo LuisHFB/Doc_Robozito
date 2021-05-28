@@ -39,3 +39,4 @@ speed_travel_layer_0 = 150
 
 Use as imagens acima como guia para posicionar as peças na mesa de impressão do Slicer.
 
+
