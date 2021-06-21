@@ -10,3 +10,6 @@ Utilizamos os Servo motores pela facilidade de controlar sua posição visto que
 Através da utilização do **Suporte de motor Direito/Esquerdo** impresso em 3D conseguimos realizar a fixação dos motores à 90° formando o que seriam os *ombros*, o que permite que sejam rotacionados os braços assim como baixa-lo e levanta-lo.
 
 ![Suporte Motores](imgs/Conector.png){: .center}
+
+!!! video
+    ![Teste](https://www.youtube.com/watch?v=lrugreN2K4w)
