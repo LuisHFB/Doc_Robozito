@@ -85,7 +85,8 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
+  - pymdownx.critic:
+      mode: view
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
@@ -102,9 +103,12 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.magiclink
+  - attr_list
 
 plugins:
     - search
+    - git-revision-date-localized
 
 extra:
   social:
