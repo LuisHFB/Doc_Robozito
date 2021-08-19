@@ -1,11 +1,11 @@
 # Download do Arduino IDE
 
-Primeiramente precisaremos baixar o Arduino IDE para que possamos fazer a programacao da placa ESP32.
+Primeiramente precisaremos baixar o Arduino IDE para que possamos fazer a programacao da placa ESP8266.
 
 Vá à pagina do [Arduino](https://www.arduino.cc/en/software) e selecione o seu sistema operacional para fazer a instalação do sistema corretamente. 
 
 !!! attention "" 
-    Por enquanto a versão web do Arduino IDE não suporta o ESP32
+    Por enquanto a versão web do Arduino IDE não suporta o ESP8266
 
 # Instalação do Arduino IDE
 
@@ -34,11 +34,11 @@ Após o download do instalador, prossiga com o processo de instalação normal p
 
 !!! info "Tutorial baseado no tutorial da [Usinainfo](https://www.usinainfo.com.br/blog/programar-esp32-com-a-ide-arduino-tutorial-completo/)"
 
-## Configurando a IDE para o ESP32
+## Configurando a IDE para o ESP8266
 
 Para usar e programar ESP32 na IDE do Arduino, precisamos primeiro que ele reconheça os modelos da placa. Para isso, primeiramente devemos ir até as Preferências, **Arquivo** :arrow_right: **Preferências** ou ++ctrl+comma++ , e colar a URL abaixo no campo de URLs adicionais:
 
-https://dl.espressif.com/dl/package_esp32_index.json
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 ![Preferencias do arduino](imgs/ArduinoPref.png){: .center}
 
@@ -46,11 +46,11 @@ Com isso, permitimos que a IDE acesse uma pequena “base de dados” no formato
 
 ![Gerenciador de placas](imgs/ArduinoGerenciadorPlaca.png){: .center}
 
-Nele, pesquise por ***esp32*** na caixa de pesquisa. Em seguida, instale a versão mais recente do driver que irá aparecer: ***esp32 by Espressif Systems***, conforme ilustrado na figura a seguir:
+Nele, pesquise por ***esp8266*** na caixa de pesquisa. Em seguida, instale a versão mais recente do driver que irá aparecer: ***esp8266 by ESP8266 Community***, conforme ilustrado na figura a seguir:
 
 ![esp32 by Espressif](imgs/ArduinoESP32.png){: .center}
 
-Feito isso, você deve selecionar a placa **ESP32 Dev Module**, no menu de placas, para programar na ESP.
+Feito isso, você deve selecionar a placa **NodeMCU 0.9 (ESP-12 Module)**, no menu de placas, para programar na ESP.
 
 ![Dev Module](imgs/ArduinoESPDevMod.png){: .center}
 
