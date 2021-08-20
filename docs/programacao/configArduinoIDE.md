@@ -48,11 +48,11 @@ Com isso, permitimos que a IDE acesse uma pequena “base de dados” no formato
 
 Nele, pesquise por ***esp8266*** na caixa de pesquisa. Em seguida, instale a versão mais recente do driver que irá aparecer: ***esp8266 by ESP8266 Community***, conforme ilustrado na figura a seguir:
 
-![esp32 by Espressif](imgs/ArduinoESP32.png){: .center}
+![esp32 by Espressif](imgs/ArduinoESP8266.png){: .center}
 
 Feito isso, você deve selecionar a placa **NodeMCU 0.9 (ESP-12 Module)**, no menu de placas, para programar na ESP.
 
-![Dev Module](imgs/ArduinoESPDevMod.png){: .center}
+![Dev Module](imgs/ArduinoESPNodeMCU.png){: .center}
 
 Por fim, basta você selecionar a porta a qual a ESP está conectada e você estará pronto para enviar códigos para ela!
 
