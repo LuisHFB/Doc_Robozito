@@ -41,7 +41,7 @@
                 "connection.send(command);}</script></head>"
             "<body>LED Control:<br/><select id=\"color\">"
             "<option value=\"R\">Red</option><option value=\"G\">Green</option><option value=\"B\">Blue</option><option value=\"W\">White</option>"
-            "</select><br/><br/>Intensity: <br/> <input id=\"r\" type=\"range\" min=\"0\" max=\"255\" step=\"1\" oninput=\"sendValue();\"/><br/></body></html>";
+            "</select><br/><br/>Intensity: <br/> <input id=\"r\" type=\"range\" min=\"0\" max=\"180\" step=\"1\" oninput=\"sendValue();\"/><br/></body></html>";
 
     void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length) {
 
