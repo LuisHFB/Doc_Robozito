@@ -5,7 +5,6 @@ site_description: 'Robo OpenSource para atividade de entrosamento de grupo'
 copyright: 'Copyright &copy; Luis Bueno @ Insper'
 
 theme: 
-  name: material
   language: pt
   features:
     - 'navigation.tabs'
